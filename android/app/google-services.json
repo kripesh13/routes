@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "943675604857",
+    "project_id": "road-sewa",
+    "storage_bucket": "road-sewa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943675604857:android:628c329bbb787eede839a8",
+        "android_client_info": {
+          "package_name": "com.nectardigit.mansa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS_cruwEcCXJm6YCL3DNObysfqb1unhzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943675604857:android:0e6c905e89d53c6ae839a8",
+        "android_client_info": {
+          "package_name": "com.nectardigit.roadsewa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS_cruwEcCXJm6YCL3DNObysfqb1unhzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

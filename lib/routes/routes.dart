@@ -29,7 +29,7 @@ final GoRouter route = GoRouter(
   // },
 
   navigatorKey: navigatorKey,
-  initialLocation: '/map',
+  initialLocation: '/home',
   routes: <RouteBase>[
     GoRoute(
       path: "/home",

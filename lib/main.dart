@@ -9,19 +9,6 @@ import 'package:router/service/notification_services.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  AwesomeNotifications()
-      .initialize("resource://mipmap/ic_launcher", [
-    NotificationChannel(
-      channelKey: 'basic_channel',
-      channelName: "Basic Notification",
-      channelDescription: "Basic Notification",
-      importance: NotificationImportance.High,
-      channelShowBadge: true,
-
-    )
-  ]);
-
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );

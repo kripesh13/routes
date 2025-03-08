@@ -9,6 +9,13 @@
       <version>2.0.0</version>
       <required_version>1.9.0</required_version>
       <release_notes>Some important updates and bug fixes.</release_notes>
+      <!-- Add the enclosure tag with the URL to the update file -->
+      <enclosure
+        url="https://example.com/path/to/your/app-v2.0.0.apk"
+        sparkle:version="2.0.0"
+        sparkle:shortVersionString="2.0.0"
+        length="12345678"
+        type="application/vnd.android.package-archive" />
     </item>
   </channel>
 </rss>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <item>
+      <title>Version 2.0.0</title>
+      <description>What's new in version 2.0.0</description>
+      <pubDate>2025-03-08T00:00:00+00:00</pubDate>
+      <link>https://play.google.com/store/apps/details?id=com.ktmrush.connecthimal</link>
+      <version>2.0.0</version>
+      <required_version>1.9.0</required_version>
+      <release_notes>Some important updates and bug fixes.</release_notes>
+    </item>
+  </channel>
+</rss>

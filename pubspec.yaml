@@ -48,6 +48,7 @@ dependencies:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   dio: ^5.8.0+1
+  firebase_crashlytics: ^4.3.2
 
 dev_dependencies:
   flutter_test:

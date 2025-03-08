@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:router/firebase_options.dart';
 import 'package:router/routes/routes.dart';
 import 'package:router/service/notification_services.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,6 +16,8 @@ void main() async {
   NotificationServices notificationServices = NotificationServices();
   await notificationServices.requestNotificationPermissions();
   FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
+   await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
+
   runApp(const MyApp());
 }
 

@@ -111,6 +111,7 @@ class NotificationServices {
 
   Future<String?> getToken() async {
     String? token = await firebaseMessaging.getToken();
+    print("yo device token ho hai");
     return token;
   }
 

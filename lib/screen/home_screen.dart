@@ -1,3 +1,4 @@
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -28,8 +29,15 @@ class HomeScreen extends ConsumerWidget {
 
           InkWell(
             onTap: () async {
-           var token = await  NotificationServices().getToken();
-           print(token);
+           try {
+      crash();
+    } catch (e, stackTrace) {
+            FirebaseCrashlytics.instance.recordError(
+              e,
+              stackTrace,
+              fatal: true,
+            );
+          }
             },
             child: Text(hello)), 
 
@@ -51,4 +59,9 @@ class HomeScreen extends ConsumerWidget {
       ),
     );
   }
+}
+
+
+void crash() {
+  throw Exception('Crash!');
 }
